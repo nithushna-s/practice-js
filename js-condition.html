@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="name_full">hi</div>
+  
+    <script >
+
+      //  q3
+      var x=50;
+      var y=20;
+      (x>y)? console.log(x):console.log(y);
+       //q4
+      
+      var a=prompt("enter your marks");
+      if(80<=a && 100<=a){
+            a="A"
+      }
+      else if(70<=a && 79<=a){
+        a="B"
+      }
+      else if(60<=a && 69<=a){
+        a="C"
+      }
+      else if(50<=a && 59<=a){
+        a="D"
+      }
+      else{
+        a="F"
+      };
+      console.log(a);
+
+     // Q5
+      var month=prompt("Enter your month");
+      switch(month){
+        case "September":
+        case "October":
+        case "November":
+        console.log("Autumn");
+        break;
+        case "December":
+        case "January ":
+        case " February":
+        console.log("Winter");
+        break;
+        case "March":
+        case " April ":
+        case "May":
+        console.log(" Spring");
+        break;
+        case "June":
+        case " July ":
+        case " August":
+        console.log("Summer");
+        break;
+        default:
+          console.log("It's not month");
+          break;
+      }
+      //q1
+var userAge = parseInt(prompt("Enter your age:"));
+
+if (userAge >= 18) {
+  console.log("You are old enough to drive.");
+} else {
+  var yearsToDrive = 18 - userAge;
+  console.log("You are left with " + yearsToDrive + " years to drive.");
+}
+//q2
+var yourAge = parseInt(prompt("Enter your age:"));
+var myAge = 30; 
+
+if (yourAge > myAge) {
+  var ageDifference = yourAge - myAge;
+  console.log("You are " + ageDifference + " years older than me.");
+} else if (yourAge < myAge) {
+  var ageDifference = myAge - yourAge;
+  console.log("I am " + ageDifference + " years older than you.");
+} else {
+  console.log("We are the same age.");
+}
+//Switch 
+//q1
+var month=prompt("Enter your month");
+      switch(month){
+        case "1":
+        case "3":
+        case "5":
+        case "7":
+        case "8 ":
+        case " 10":
+        case "12":
+        console.log(" 31");
+        break;
+        case "4":
+        case "6":
+        case "9 ":
+        case " 11":
+        console.log("30");
+        break;
+        case " 11":
+        console.log("30");
+        case 2: 
+            switch (true) {
+                case (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0:
+                    console.log(29); 
+                default:
+                   close.log(28); 
+            }
+   
+        default:
+          console.log("It's not month");
+          break;
+      }
+     // q2
+      var operation = prompt("Enter the operation (+, -, *, /, %):");
+var num1 = parseFloat(prompt("Enter the first number:"));
+var num2 = parseFloat(prompt("Enter the second number:"));
+var result;
+
+switch (operation) {
+    case "+":
+        result = num1 + num2;
+        break;
+    case "-":
+        result = num1 - num2;
+        break;
+    case "*":
+        result = num1 * num2;
+        break;
+    case "/":
+        result = num2 !== 0 ? num1 / num2 : "Division by zero is not allowed.";
+        break;
+    case "%":
+        result = num2 !== 0 ? num1 % num2 : "Modulus by zero is not allowed.";
+        break;
+    default:
+        result = "Invalid operation";
+}
+
+console.log("Result: " + result);
+//q3
+var technology = prompt("Enter a technology:");
+
+switch (technology.toLowerCase()) {
+    case "html":
+    case "css":
+    case "javascript":
+        console.log("Frontend");
+        break;
+    case "nodejs":
+    case "expressjs":
+        console.log("Backend");
+        break;
+    default:
+        console.log("Not in list");
+        break;
+}
+//Function 
+//q1,2
+function fullName() {
+  var firstName = "NITHUSHNA"; 
+  var lastName = "SIVARASA";   
+  var fullName = firstName + " " + lastName;
+ document.getElementById(name_full).innerHtml=("My full name is: " + fullName);
+}
+function addNumbers(num1, num2) {
+  var sum = num1 + num2;
+  return sum;
+}
+
+// q3
+
+function addNumbers(num1, num2) {
+  var sum = num1 + num2;
+  return sum;
+}
+var firstNumber = 5;
+var secondNumber = 7;
+var result = addNumbers(firstNumber, secondNumber);
+console.log("The sum of the two numbers is: " + result);
+
+//q4
+function areaOfRectangle(length, width) {
+  var area = length * width;
+  return area;
+}
+
+var rectangleLength = 5;
+var rectangleWidth = 10;
+var area = areaOfRectangle(rectangleLength, rectangleWidth);
+console.log("The area of the rectangle is: " + area);
+//q5
+function perimeterOfRectangle(length, width) {
+  var perimeter = 2 * (length + width);
+  return perimeter;
+}
+
+var rectangleLength = 15;
+var rectangleWidth = 30;
+var perimeter = perimeterOfRectangle(rectangleLength, rectangleWidth);
+console.log("The perimeter of the rectangle is: " + perimeter);
+//q6
+function volumeOfRectPrism(length, width, height) {
+  var volume = length * width * height;
+  return volume;
+}
+var prismLength = 5;
+var prismWidth = 10;
+var prismHeight = 3;
+var volume = volumeOfRectPrism(prismLength, prismWidth, prismHeight);
+console.log("The volume of the rectangular prism is: " + volume);
+//q7
+function areaOfCircle(radius) {
+  var pi = Math.PI; 
+  var area = pi * radius * radius;
+  return area;
+}
+
+var circleRadius = 5;
+var area = areaOfCircle(circleRadius);
+console.log("The area of the circle is: " + area);
+//q8
+function circumOfCircle(radius) {
+  var pi = Math.PI;
+  var circumference = 2 * pi * radius;
+  return circumference;
+}
+
+var circleRadius = 5;
+var circumference = circumOfCircle(circleRadius);
+console.log("The circumference of the circle is: " + circumference);
+//q9
+function convertCelsiusToFahrenheit(celsius) {
+  var fahrenheit = (celsius * 9/5) + 32;
+  return fahrenheit;
+}
+var celsiusTemperature = 25;
+var fahrenheitTemperature = convertCelsiusToFahrenheit(celsiusTemperature);
+console.log(celsiusTemperature + "°C is equal to " + fahrenheitTemperature + "°F");
+
+//q10
+function calculateBMI(weightKg, heightM) {
+  var bmi = weightKg / (heightM * heightM);
+  return bmi;
+}
+
+function categorizeBMI(bmi) {
+  if (bmi < 18.5) {
+    return "Underweight";
+  } else if (bmi >= 18.5 && bmi < 25) {
+    return "Normal weight";
+  } else if (bmi >= 25 && bmi < 30) {
+    return "Overweight";
+  } else {
+    return "Obese";
+  }
+}
+
+var weight = 70; 
+var height = 1.75; 
+
+var bmi = calculateBMI(weight, height);
+var category = categorizeBMI(bmi);
+
+console.log("BMI: " + bmi.toFixed(2));
+console.log("Category: " + category);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math</h2>
+
+<p>Math.PI returns PI (approximately 3.14):</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.PI;
+
+console.log(Math.round(0.9));
+// Expected output: 1
+
+console.log(Math.round(5.95), Math.round(5.5), Math.round(5.05));
+// Expected output: 6 6 5
+
+console.log(Math.round(-5.05), Math.round(-5.5), Math.round(-5.95));
+// Expected output: -5 -5 -6
+         
+console.log(Math.pow(7, 3));
+// Expected output: 343
+
+console.log(Math.pow(4, 0.5));
+// Expected output: 2
+
+console.log(Math.pow(7, -2));
+// Expected output: 0.02040816326530612
+//                  (1/49)
+
+console.log(Math.pow(-7, 0.5));
+// Expected output: NaN
+
+
+let a = 3;
+let b = new Number(3);
+let c = 3;
+
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+
+
+let number = 0;
+console.log(number++);
+console.log(++number);
+console.log(number);
+
+
+
+// string
+// concat
+var d=("nithu")
+var e=("hello")
+console.log(e.concat(d));
+console.log(e.concat(" ",d))
+
+// trim
+var d=("   nithu hello   ");
+console.log(d);
+console.log(d.trim());
+
+// replace
+var e=("good morning!");
+var ere=e.replace("morning!","afternoon!");
+console.log(ere);
+var e=("W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learninTutorials referencesand examples are constantly reviewed to avoid errors but we cannot warrant full correctness");
+console.log(e)
+var ere=e.replace("W3Schools","MDN");
+console.log(ere);
+
+var e=("good good good");
+var ere=e.replace("good","afternoon!");
+console.log(ere);
+var e=("good good good");
+var ere=e.replaceAll("good","afternoon!");
+console.log(ere);
+
+var e=("good day"); 
+//   0123 456
+console.log(e.charAt(1));
+// output o
+var e=("goodday"); 
+//   0123 456
+console.log(e.charAt(e.length-2));
+
+
+// slice 
+name="the quick brown fox jumps over the lay dog.";
+console.log(name.slice(-10,-3))
+// positiv number
+name="the quick brown fox jumps over the lay dog.";
+console.log(name.slice(10,20))
+// split
+name="the quick brown fox jumps over the lay dog.";
+console.log(name.split(" ",4))
+
+name=" the quick brownfox jumps over the lay dog.";
+console.log(name.split(" ",7))
+
+
+
+const sum =eval('10*10+5');
+console.log(sum)
+
+var num = 8;
+var num = 10;
+console.log(num);
+
+
+// What is the output
+console.log(typeof typeof 1);
+
+// What is the output
+console.log(3 +2 +"4"+ '5');
+
+const num_n = parseInt('7*10', 10);
+console.log(num_n);
+
+console.log(Number(2) === Number(2));
+console.log(Boolean(false) === Boolean(false));
+console.log(Symbol('foo') === Symbol('foo'));
+
+
+const namee = 'Lydia Hallie';
+console.log(namee.padStart(13));
+console.log(namee.padStart(2));
+
+//  split
+var f="Good morning";
+console.log(f)
+console.log(f.slice(5));
+console.log(f.substring(5));
+// case1 =5
+// case2 =-7
+var f="Good morning";
+console.log(f.slice(-7));
+console.log(f.substring(-7));
+// case3 =12
+var f="Good morning";
+console.log(f.slice(12));
+console.log(f.substring(12));
+// case4 =(9,5)
+var f="Good morning";
+console.log(f.slice(9,5));
+console.log(f.substring(9,5));
+// case5 =(-12,-8)
+var f="Good morning";
+console.log(f.slice(-12,8));
+console.log(f.substring(-12,8));
+// case6 =(-3,-5)
+var f="Good morning";
+console.log(f.slice(-3,5));
+console.log(f.substring(-3,5));
+// case7 =-(-5,-3)
+var f="Good morning";
+console.log(f.slice(-5,-3));
+console.log(f.substring(-5,-3));
+// a.slice(5);
+// a.String(5);
+var h=("hello am nithu ")
+
+let person={
+name:"nithushna",
+age:22,
+genter:"female",
+}
+console.log(person);
+console.log(person.age);
+person.age
+person.nationality ="srilankkan"
+console.log(person);
+person.age =24;
+console.log(person);
+
+
+//array 
+var g=new Array("hello","hi","nithu")
+console.log(g);
+var g=["hello","hi","nithu"]
+console.log(g);
+// 6 out put
+var h=[[2],[3,6,7]]
+console.log(h[1][1]);
+//100 indexla a value
+var i=[]
+i[99]=50;
+console.log(i);
+//to string
+var j=[2,3,4,5];
+console.log(typeof(j))
+ var k=j.toString();
+ console.log(typeof(k))
+ //join 
+ var m=["hi ","hello",67 ,68]
+ var n=m.join(" or ");
+ console.log(n)
+ //pop
+ var m=["hi ","hello",67 ,68]
+ m.pop();
+ console.log(m)
+ //
+</script>
+</body>
+</html>
